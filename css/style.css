@@ -46,7 +46,7 @@ ul .nav {
   position: relative;
   height: 100%;
   width: 0%;
-  background: green;
+  background: #4a4e4f;
   box-shadow: 0 0 4px rgba(0, 0, 0, .5);
 }
 
@@ -55,6 +55,7 @@ ul .nav {
 }
 .imgcenter{
   text-align: center;
+  display: inline-block;
 }
 .thumbnail{
   display: inline-block;
@@ -77,9 +78,11 @@ ul .nav {
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+.container-fluid{
+  background: #fff;
 }
 .bg-header{
-	margin-top: 172px;
+	margin-top: 72px;
 	height: 569px;
 	background: url(../img/bg2.jpg) center top fixed; 
 	-webkit-background-size: cover; /* pour Chrome et Safari */
@@ -100,10 +103,14 @@ ul .nav {
   margin-top: 82px !important;
 }
 footer {
-  background: #333;
-  color: #eee;
+  background: #4a4e4f;
+  color: #fff;
   font-size: 11px;
   padding: 20px;
+}
+
+.list-group{
+  position: fixed; top: 82px; right: auto;
 }
 /* --------------------------------------
    Media Queries
@@ -116,7 +123,9 @@ footer {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-
+.list-group{
+  visibility: hidden;
+}
 }
 
 /* Large desktop */

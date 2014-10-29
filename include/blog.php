@@ -84,29 +84,39 @@
 				</div>
 			</div> <!-- end article --> 
 
-			<div class="col-lg-3">
+			<div class="col-sm-3">
 				<div class="list-group">
-
 					<a href="#" class="list-group-item active">
 						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, labore. Odit sint iure illo eos, aut facere autem quam, corporis animi quibusdam, dicta impedit atque beatae numquam, est consequuntur veniam?</p>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</a>
 
 					<a href="#" class="list-group-item">
 						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, labore. Odit sint iure illo eos, aut facere autem quam, corporis animi quibusdam, dicta impedit atque beatae numquam, est consequuntur veniam?</p>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</a>
 
 					<a href="#" class="list-group-item">
 						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, labore. Odit sint iure illo eos, aut facere autem quam, corporis animi quibusdam, dicta impedit atque beatae numquam, est consequuntur veniam?</p>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</a>
 
 					<a href="#" class="list-group-item">
 						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, labore. Odit sint iure illo eos, aut facere autem quam, corporis animi quibusdam, dicta impedit atque beatae numquam, est consequuntur veniam?</p>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</a>
-				</div>
-			</div> <!-- end list-group -->
-		</div>
-	</div>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</a>
+
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
+						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</a>
+				</div> <!-- end list-group -->
+			</div> <!-- end col-sm-3 -->
+
+		</div> <!-- end row mgtop -->
+</div>

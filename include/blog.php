@@ -85,18 +85,8 @@
 			</div> <!-- end article --> 
 
 			<div class="col-sm-3">
-				<div class="list-group">
+				<div class="list-group list-group-fixed">
 					<a href="#" class="list-group-item active">
-						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</a>
-
-					<a href="#" class="list-group-item">
-						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
-						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</a>
-
-					<a href="#" class="list-group-item">
 						<h4 class="list-group-item-heading">Lorem ipsum dolor sit amet</h4>
 						<p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</a>

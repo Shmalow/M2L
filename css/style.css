@@ -109,8 +109,20 @@ footer {
   padding: 20px;
 }
 
-.list-group{
+
+/* --------------------------------------
+   Blog
+   -------------------------------------- */
+.list-group-fixed{
   position: fixed; top: 82px; right: auto;
+  width: 263px;
+}
+p{
+  text-align: justify;
+}
+.featureImg{
+  width: 100%;
+  margin-bottom: 15px;
 }
 /* --------------------------------------
    Media Queries

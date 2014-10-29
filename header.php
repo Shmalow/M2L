@@ -32,9 +32,8 @@
             <div class="collapse navbar-collapse headerCollapse">
                 <ul class="nav navbar-nav navbar-right nav-height">
                     <li class="active"><a href="?p=accueil"><strong>Accueil</strong></a></li>
-                    <li><a href="?p=ligues"><strong>Ligues</strong></a></li>
                     <li><a href="?p=blog"><strong>Blog</strong></a></li>
-                    <li><a href="?p=photos"><strong>Photos</strong></a></li>
+                    <li><a href="?p=ligues"><strong>Ligues</strong></a></li>
                     <li><a href="?p=reservations"><strong>Réservations</strong></a></li>
 			        <?php 
 						if($security->logged()){ // si user est connecté on affiche

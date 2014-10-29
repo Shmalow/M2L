@@ -44,11 +44,12 @@
                             <li class="dropdown-header">Publication</li>
                             	<li><a href="#">Créer une ligue</a></li>
                                 <li><a href="#">Publier un article</a></li>
-                                <li><a href="#">Partager des photo</a></li>
                                 <li><a href="#">Réserver une salle</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Mon Compte</li>
                                 <li><a href="?p=profil">Mes info</a></li>
+                                <li><a href="#">Mes articles</a></li>
+                                <li><a href="#">Mes ligues</a></li>
                             <li class="divider"></li>
                             <li><a href="?p=logout">Déconnexion</a></li>
                         </ul>

@@ -1,0 +1,125 @@
+
+/*
+My Custom CSS
+=============
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.m2l{
+	margin-top: 100px;
+	font-weight: 700;
+	font-size: 45px;
+	color: #fff;
+}
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+.navbar-brand img{
+	margin-top: -16px;
+}
+ul .nav {
+  height: 73px;
+}
+/* --------------------------------------
+   Loading Bar
+   -------------------------------------- */
+.loadingBar{
+  margin-top: 77px;
+  padding: 0;
+}
+#progress-bar-container{
+  position: absolute; top: 77px; left: 0; right: 0;
+  width: 100%;
+  height: 4px;
+}
+
+#progress-bar{
+  position: relative;
+  height: 100%;
+  width: 0%;
+  background: green;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+#progress-bar-elements{
+  display: none;
+}
+.imgcenter{
+  text-align: center;
+}
+.thumbnail{
+  display: inline-block;
+}
+
+/* --------------------------------------
+   Survol Directionnel
+   -------------------------------------- */
+
+.row .thumb{
+  width: 250px; height: 200px;
+  float: left;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.alt{
+  position: absolute; top: 0; left: -100%;
+}
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+}
+.bg-header{
+	margin-top: 172px;
+	height: 569px;
+	background: url(../img/bg2.jpg) center top fixed; 
+	-webkit-background-size: cover; /* pour Chrome et Safari */
+  	-moz-background-size: cover; /* pour Firefox */
+  	-o-background-size: cover; /* pour Opera */
+  	background-size: cover;
+}
+.logo{
+  width: 250px;
+  height: 73px;
+  margin-left: -3px !important;
+  background: url(../img/logoLorraine.png);
+}
+.jumbotron{
+  margin-top:  72px;
+}
+.container .mgtop{
+  margin-top: 82px !important;
+}
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}

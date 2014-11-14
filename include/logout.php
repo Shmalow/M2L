@@ -1,6 +1,5 @@
 <?php
-	$_SESSION = array();
-	unset($_SESSION);
-	session_destroy();
-	header('location:/m2l/');
+$_SESSION = array();
+session_destroy();
+header('Location: /m2l/');
 ?>

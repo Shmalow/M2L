@@ -26,8 +26,18 @@ My Custom CSS
 .navbar-brand img{
 	margin-top: -16px;
 }
-ul .nav {
-  height: 73px;
+.navbar-nav > li > a {
+    padding-bottom: 26px;
+    padding-top: 26px;
+}
+.navbar-inverse-top{
+  margin-top: 77px;
+}
+.navbar-inverse-bottom{
+  margin-bottom: 77px;
+}
+.navbar-inverse{
+  height: 7px;
 }
 /* --------------------------------------
    Loading Bar
@@ -60,7 +70,9 @@ ul .nav {
 .thumbnail{
   display: inline-block;
 }
-
+.carousel-wrap{
+  width: 1100px !important;
+}
 /* --------------------------------------
    Survol Directionnel
    -------------------------------------- */
@@ -98,6 +110,7 @@ ul .nav {
 }
 .jumbotron{
   margin-top:  72px;
+  margin-bottom: 0;
 }
 .container .mgtop{
   margin-top: 82px !important;
@@ -130,13 +143,18 @@ p{
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-
+.carousel-wrap{
+  width: 300px;
+}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 .list-group{
   visibility: hidden;
+}
+.carousel-wrap{
+  width: 700px;
 }
 }
 

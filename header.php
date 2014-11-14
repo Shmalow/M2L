@@ -36,20 +36,20 @@
                     <li><a href="?p=ligues"><strong>Ligues</strong></a></li>
                     <li><a href="?p=reservations"><strong>Réservations</strong></a></li>
 			        <?php 
-						if($security->logged()){ // si user est connecté on affiche
+						if($connexion->islogged()){ // si user est connecté on affiche
 					?>
 					<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>pseudo de user</strong><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong><?php echo $_SESSION['Auth']['pseudo']; ?></strong><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-header">Publication</li>
-                            	<li><a href="#">Créer une ligue</a></li>
-                                <li><a href="#">Publier un article</a></li>
-                                <li><a href="#">Réserver une salle</a></li>
+                            	<li><a href="?p=profil">Créer une ligue</a></li>
+                                <li><a href="?p=profil">Publier un article</a></li>
+                                <li><a href="?p=profil">Réserver une salle</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-header">Mon Compte</li>
                                 <li><a href="?p=profil">Mes info</a></li>
-                                <li><a href="#">Mes articles</a></li>
-                                <li><a href="#">Mes ligues</a></li>
+                                <li><a href="?p=profil">Mes articles</a></li>
+                                <li><a href="?p=profil">Mes ligues</a></li>
                             <li class="divider"></li>
                             <li><a href="?p=logout">Déconnexion</a></li>
                         </ul>
@@ -58,7 +58,7 @@
 					}
 					else{
 					?>
-					<li><a href="#connexion" data-toggle="modal"><strong>Connexion</strong></a></li>
+					<li><a href="?p=connexion" ><strong>Connexion</strong></a></li>
 
 					<?php
 					}
@@ -67,35 +67,3 @@
             </div>
         </div>
     </header> <!-- end header -->
-
-<div class="modal fade" id="connexion" role="dialog">
-	<div class="modal-dialog">
-		<div class="modal-content">
-            <form action="?p=connexion" method="POST" class="form-horizontal">
-    			<div class="modal-header">
-    				<button class="close" data-dismiss="modal">&times;</button>
-    				<h3>Connexion</h3>
-    			</div>
-    			<div class="modal-body">
-    				<div class="form-group">
-                        <label for="pseudo" class="col-lg-2 control-label">Pseudo:</label>
-                        <div class="col-lg-10">
-                            <input type="text" class="form-control" id="pseudo"  name="pseudo" placeholder="pseudo ici, dude!">
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password" class="col-lg-2 control-label">Password:</label>
-                        <div class="col-lg-10">
-                            <input type="password" class="form-control" id="password"  name="password" placeholder="ok, yeux fermés">
-                        </div>
-                    </div>
-    			</div>
-    			<div class="modal-footer">
-    				<a href="?p=inscription" class="btn btn-success">S'inscrire</a>
-    				<button class="btn btn-success" type="submit" name="submit">Se Connecter</button>
-    			</div>
-            </form>
-		</div>
-	</div>
-</div>

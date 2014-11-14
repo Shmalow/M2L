@@ -3,6 +3,14 @@
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h1 class="m2l">Maison des Ligues de Lorraine</h1>
+                    <?php if(isset($error_unknown)){ 
+                    ?>
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <?php echo $error_unknown.
+                    '</div>'; }?>
             </div>
         </div>
         <div class="row">

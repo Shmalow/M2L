@@ -82,6 +82,4 @@ progressBar.init();
 		$(this).find('.alt').stop().animate(_getDir($(this),event), 300);
 	});
 
-
-
 })(jQuery);

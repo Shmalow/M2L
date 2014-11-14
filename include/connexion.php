@@ -1,53 +1,61 @@
-<?php 
+<?php
+if(!empty($_POST)){
+	$sql ='SELECT pseudo, password FROM users WHERE pseudo = :pseudo AND password = :password';
+	$q = array(
+		'pseudo' => $_POST['pseudo'], 
+		'password' => sha1($_POST['password']));
+	$req = $bdd->prepare($sql);
+	$req->execute($q);
 
-	if(isset($_POST["pseudo"]) && isset($_POST['password'])){
-		if(!empty($_POST['pseudo']) && !empty($_POST['password'])){
-			//creation de la variable du pseudo pour recuperer ce que l'utilisateur a entrer dans le formulaire
-			$pseudo = $_POST["pseudo"];
-			//creation de la variable du mot de passe pour recuperer ce que l'utilisateur a entrer dans le formulaire
-			$password = sha1($_POST["password"]);
-			//requete effectuee a la base de donnee pour la connexion (on verifie que le pseudo et le mot de passe corresponde bien à un utilisateur)
-			$resultat = $bdd->prepare("SELECT * FROM users WHERE pseudo= :pseudo AND password= :pass LIMIT 1");
-			$resultat->execute(array(
-				":pseudo"	=> $pseudo,
-				":pass"		=> $password
-			));
-			
-			//on verifie que la requete renvoi une valeur
-			
-			if($resultat->rowCount() != 0){
-				$user = $resultat->fetchAll();
-				$_SESSION['user'] = $user[0];
-				header("Location:/m2l/index.php?p=edit-profil");
-			}
-			else{
-				echo "Erreur dans le pseudo/password";
-			}
-		}
-		else{
-			echo "Vous n'avez pas remplie tous les champs obligatoire";
-		}
+	$count = $req->rowCount($sql);
+	if($count == 1){ // si son pseudo et password existe dans la BDD 
+		$_SESSION['Auth'] = array(
+			'pseudo' => $_POST['pseudo'], 
+			'password' => sha1($_POST['password'])
+		);
+		header('Location: ?p=profil');
+	}else{
+		$error_unknown = 'Utilisateur inexistant !';
 	}
+}
 ?>
+<div class="jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<h3><strong>CONNEXION</strong></h3>
+				<?php if(isset($error_unknown)){ 
+				?>
+				<div class="alert alert-danger alert-dismissible">
+					<button type="button" class="close" data-dismiss="alert">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<?php echo $error_unknown.
+				'</div>'; }?>
+				<form class="form-horizontal" method="POST" action="">
 
-    		<form name="login-form" class="login-form" action="?p=connexion" method="POST">
-	
-		<div class="header">
-		<h1>CONNEXION</h1>
-		<span>Veuillez saisir votre pseudo et votre mot de passe </span>
-		</div>
-	
-		<div class="content">
-		<input name="pseudo" type="text" class="input username" placeholder="Pseudo" required/>
-		<div class="user-icon"></div>
-		<input name="password" type="password" class="input password" placeholder="Password" required/>
-		<div class="pass-icon"></div>		
-		</div>
+					<div class="form-group">
+				    	<label for="pseudo" class="col-sm-2 control-label">Pseudo </label>
+				    	<div class="col-sm-10">
+				      		<input type="text" name="pseudo" id="pseudo" class="form-control" required>
+				    	</div>
+				  	</div>
 
-		<div class="footer">
-		<input type="submit" name="submit" value="Se connecter" class="button right" />
-		</div>
-	
-	</form>
+				  	<div class="form-group">
+				    	<label for="password" class="col-sm-2 control-label">Password </label>
+				    	<div class="col-sm-10">
+				      		<input type="password" name="password" id="password" class="form-control" required>
+				    	</div>
+				  	</div>
 
-	
+				  	<div class="form-group">
+				    	<div class="col-sm-offset-2 col-sm-10">
+				      		<button type="submit" name="submit" class="btn btn-success">Se connecter !</button>
+				      		<a href="?p=inscription" class="btn btn-success">S'inscrire !</a>
+				      	</div>
+				    </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

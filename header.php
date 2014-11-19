@@ -31,7 +31,7 @@
 
             <div class="collapse navbar-collapse headerCollapse">
                 <ul class="nav navbar-nav navbar-right nav-height">
-                    <li class="active dropdown">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Présentation</strong><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="?p=accueil">Accueil</a></li>

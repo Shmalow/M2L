@@ -31,14 +31,14 @@
 
             <div class="collapse navbar-collapse headerCollapse">
                 <ul class="nav navbar-nav navbar-right nav-height">
-                    <li class="active dropdown">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Présentation</strong><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="?p=accueil">Accueil</a></li>
-                            <li><a href="#">Personnel</a></li>
-                            <li><a href="#">Locaux</a></li>
-                            <li><a href="#">Matériel Informatique</a></li>
-                            <li><a href="#">Statut Juridique</a></li>
+                            <li><a href="?p=personnel">Personnel</a></li>
+                            <li><a href="?p=locaux">Locaux</a></li>
+                            <li><a href="?p=mat-it">Matériel Informatique</a></li>
+                            <li><a href="?p=stat-ju">Statut Juridique</a></li>
                         </ul>
                     </li>
                     <li><a href="?p=blog"><strong>Blog</strong></a></li>

@@ -20,4 +20,3 @@ if(!empty($_POST['titre']) && !empty($_POST['contenu'])){
 	echo 'Titre ou Contenu vide !';
 }
 ?>
-

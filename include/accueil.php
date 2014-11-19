@@ -26,7 +26,9 @@
     <div class="row">
         <div class="col-sm-12">
             <h1>Description du site de la M2L</h1>
-            <p class="lead"> A remplir </p>
+            <p class="lead"> En décidant en 2000 de l'acquisition et la réhabilitation de la Maison Régionale des Sports de Lorraine à Tomblaine, la région Lorraine a voulu répondre à des besoins de structuration du mouvement sportif lorrain, qui représente aujourd'hui 6 500 clubs, plus de 525 000 licenciés et près de 50 000 bénévoles.<br/>
+
+Véritable lieu de vie, la maison des ligues héberge la majorité des ligues sportives régionales, de la ligue de tennis (la plus grosse, qui emploie 8 personnes) à des ligues de sports qui n’ont pas d’employés permanents, comme le bowling ou la plongée sous-marine. </p>
         </div>
     </div>
 </div> <!--end description -->

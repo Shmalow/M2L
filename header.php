@@ -31,18 +31,27 @@
 
             <div class="collapse navbar-collapse headerCollapse">
                 <ul class="nav navbar-nav navbar-right nav-height">
-                    <li class="active"><a href="?p=accueil"><strong>Accueil</strong></a></li>
+                    <li class="active dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Présentation</strong><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="?p=accueil">Accueil</a></li>
+                            <li><a href="#">Personnel</a></li>
+                            <li><a href="#">Locaux</a></li>
+                            <li><a href="#">Matériel Informatique</a></li>
+                            <li><a href="#">Statut Juridique</a></li>
+                        </ul>
+                    </li>
                     <li><a href="?p=blog"><strong>Blog</strong></a></li>
                     <li><a href="?p=ligues"><strong>Ligues</strong></a></li>
                     <li><a href="?p=reservations"><strong>Réservations</strong></a></li>
-			        <?php 
-						if($connexion->islogged()){ // si user est connecté on affiche
-					?>
-					<li class="dropdown">
+                    <?php 
+                        if($connexion->islogged()){ // si user est connecté on affiche
+                    ?>
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong><?php echo $_SESSION['Auth']['pseudo']; ?></strong><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-header">Publication</li>
-                            	<li><a href="?p=profil">Créer une ligue</a></li>
+                                <li><a href="?p=profil">Créer une ligue</a></li>
                                 <li><a href="?p=profil">Publier un article</a></li>
                                 <li><a href="?p=profil">Réserver une salle</a></li>
                             <li class="divider"></li>
@@ -54,16 +63,16 @@
                             <li><a href="?p=logout">Déconnexion</a></li>
                         </ul>
                     </li>
-					<?php
-					}
-					else{
-					?>
-					<li><a href="?p=connexion" ><strong>Connexion</strong></a></li>
+                    <?php
+                    }
+                    else{
+                    ?>
+                    <li><a href="?p=connexion" ><strong>Connexion</strong></a></li>
 
-					<?php
-					}
-					?>    
+                    <?php
+                    }
+                    ?>    
                 </ul>
             </div>
         </div>
-    </header> <!-- end header -->
+    </header> end header -->

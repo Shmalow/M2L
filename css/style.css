@@ -19,6 +19,11 @@ My Custom CSS
 	font-size: 45px;
 	color: #fff;
 }
+
+.lead{
+  background: url("trame.png");
+  color: white;
+}
 /* --------------------------------------
    Navbar
    -------------------------------------- */
